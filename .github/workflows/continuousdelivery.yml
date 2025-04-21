@@ -26,6 +26,7 @@ jobs:
       - uses: actions/upload-artifact@v4
         with:
           name: projetozipado.zip
+          path: '**/*' # Specify the path to the files/artifacts to upload
       - name: Display structure of downloaded files
         run: ls -R
         
